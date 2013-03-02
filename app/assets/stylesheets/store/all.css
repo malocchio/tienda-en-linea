@@ -1,0 +1,183 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ *= require store/spree_core
+ *= require store/spree_promo
+
+ *= require_self
+ *= require_tree .
+ *= require themes/default/default
+ *= require themes/pascal/pascal
+ *= require themes/orman/orman
+ *= require nivo-slider
+*/
+/*
+body{background :-moz-linear-gradient(top, #AD3442 30%, #D66994 100%);
+    background: -webkit-linear-gradient(top, #AD3442 30%,#D66994 100%);
+    background: -o-linear-gradient(top, #AD3442 30%,#D66994 100%);
+    background: -ms-linear-gradient(top, #AD3442 30%,#D66994 100%);
+    background: linear-gradient(top, #AD3442 30%,#D66994 100%);}*/
+
+     /*STICKY FOOTER*/
+ * { margin:0; padding:0; } 
+
+html, body, #wrap { height: 100%; }
+
+body > #wrap {height: auto; min-height: 100%; }
+
+#content { padding-bottom: 170px; }  /* must be same height as the footer */
+/*
+#footer { 
+        position: relative;
+    margin-top: -170px; 
+    height: 150px;
+    clear:both;} */
+
+/* CLEAR FIX*/
+.clearfix2:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix2 {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix2 { height: 1%;}
+.clearfix2 {display: block;}
+/* End hide from IE-mac */
+ /*++++++++*/
+
+body{font-family: 'ABeeZee', sans-serif;
+  font-size:62.5%;color:#313C4A;
+    background-image:
+     -webkit-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+     -webkit-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+  background-image:
+     -moz-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+     -moz-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+  background-image:
+     -o-repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+     -o-repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+  background-image:
+     repeating-linear-gradient(45deg, rgba(0, 191, 255, .5), rgba(0, 191, 255, .5) 1px, transparent 1px, transparent 15px),
+     repeating-linear-gradient(-45deg, rgba(255, 105, 180, .5), rgba(255, 105, 180, .5) 1px, transparent 1px, transparent 15px);
+}
+
+
+[data-icon]:before{content: attr(data-icon); font-family:'entypo'; font-size:3em; margin-right: 4px;}
+
+/* HEADER */
+header{ width: 960px; height: 145px; margin: 0 auto; background:url("http://localhost/malocchio/wp-content/themes/DragonRoostIsland/images/back01.jpg") repeat scroll 0 0 transparent; position: fixed; border-right: 1px solid #D9D9D9; border-left: 1px solid #D9D9D9; z-index:10001; border-bottom:20px solid #EF304A;}
+
+#Letritas{color: #878787;left:15px; position:absolute; top:40px; width:300px;}
+#the{color: #878787;float:left; font-size:2.5em; margin-right:2px;margin-top: -10px}
+header a.logo{color: #878787;  float:left; font-size:4em; font-family: 'Monofett', cursive;}
+#Site{color: #878787;clear:both; font-size:3em; margin-left:5px; position:absolute; top:7px;}
+.container .sixteen2.columns{width:773px; float: right; margin: -12px 0;}
+
+nav#taxonomies .taxonomy-root{border-bottom: none;}
+
+nav#top-nav-bar{float: right; margin-right: 20px;}
+/*menu*//*
+nav #main-nav-bar li:first-child a{color: #fff; margin-left:20px;}*/
+nav #main-nav-bar li a{color:#fff; font-size: .875em;}
+nav #main-nav-bar li a:hover{color:#fff !important;}
+
+nav #main-nav-bar li#link-to-cart a{color:#fff; }
+nav #main-nav-bar li#link-to-cart{margin-top: 25px; margin-right: 20px;}
+
+nav #main-nav-bar .acerca-link {margin-left: 75px;}
+nav #main-nav-bar .servicios-link {margin-left: 174px;}
+nav #main-nav-bar .home-link{margin-left: 269px;}
+nav #main-nav-bar .revista-link{margin-left: 349px;}
+nav #main-nav-bar .contacto-link{margin-left: 433px;}
+
+nav #main-nav-bar li:first-child a,nav #main-nav-bar .revista-link,
+nav #main-nav-bar .contacto-link,nav #main-nav-bar .home-link, nav #main-nav-bar .acerca-link, nav #main-nav-bar .servicios-link { 
+  margin-top: 4px; position: absolute; 
+  background:none repeat scroll 0 0 #316D73; color:#fff; margin-right: 6px; 
+  padding: 10px 10px; border-radius: 15px 0;-moz-border-radius: 15px 0;
+  -webkit-border-radius: 15px 0; border-bottom-left-radius:0; border-bottom-right-radius:15px; border-top-left-radius:15px; border-top-right-radius:0;-webkit-box-shadow: 3px -3px 0 1px #CCCCCC;  -moz-box-shadow: 3px -3px 0 1px #CCCCCC; box-shadow: 3px -3px 0 1px #CCCCCC; text-transform:uppercase}
+
+
+nav #main-nav-bar .malo-link:hover{position: absolute; background: #EF304A; 
+  padding:10px 10px 36px; -webkit-box-shadow: 3px -3px 0 1px #CCCCCC;  
+  -moz-box-shadow: 3px -3px 0 1px #CCCCCC; box-shadow: 3px -3px 0 1px #CCCCCC; 
+  margin-top:-22px; color: #fff;}
+
+nav #main-nav-bar .home-link, 
+nav #main-nav-bar .acerca-link:hover, 
+nav #main-nav-bar .servicios-link:hover,
+nav #main-nav-bar .revista-link:hover,
+nav #main-nav-bar .contacto-link:hover{position: absolute; background: #EF304A; 
+  padding:10px 10px 30px; -webkit-box-shadow: 3px -3px 0 1px #CCCCCC;  
+  -moz-box-shadow: 3px -3px 0 1px #CCCCCC; box-shadow: 3px -3px 0 1px #CCCCCC; 
+  margin-top:-16px; color: #fff;}
+
+
+
+
+/*CONTENIDO*/
+#content{padding-top:156px;}
+#sidebar{margin-top:156px; float:right; background:#313C4A; 
+    -moz-border-radius: 15px 15px 15px 0;
+    -webkit-border-radius: 15px 15px 15px 0; 
+    border-radius: 15px 15px 15px 0; 
+    -webkit-box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3);  
+    -moz-box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3); 
+    box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3);}
+
+    aside h6{color: #fff; padding: 20px;}
+    aside .taxons-list li a{color: #fff;}
+/*.container .twelve.columns{background:#A5A6A5}*/
+.slider-wrapper{padding:30px 0 0}
+#wrapper{background:#dedede;
+-webkit-box-shadow: 3px 0 10px 0 rgba(51,51,51,0.3);
+    -moz-box-shadow: 3px 0 10px 0 rgba(51,51,51,0.3);
+    box-shadow: 3px 0 10px 0px rgba(51, 51, 51, 0.3)}
+.container .four.columns{background:#A5A6A5}
+nav#top-nav-bar ul li a{color: #fff;}
+nav #main-nav-bar{border-bottom: none;}
+
+
+input[type="submit"], input[type="button"], input[type="reset"], button, a.button{
+    background:none repeat scroll 0 0 #316D73; border:none;  -moz-border-radius: 15px;-webkit-border-radius: 15px; border-radius: 15px; -webkit-box-shadow: 3px -3px 0 1px #CCCCCC;  -moz-box-shadow: 3px -3px 0 1px #CCCCCC; box-shadow: 3px -3px 0 1px #CCCCCC; color:#fff; cursor:pointer; padding:5px;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, button:hover, a.button:hover{
+    background:none repeat scroll 0 0 #EF304A;
+}
+
+/*productos*/
+ul#products li a.info{color:#313C4A;}
+ul#products li a.info:hover{color:#EF304A!important;}
+a:link, a:visited{text-decoration:none; color:#313C4A;}
+a:hover{color:#EF304A!important;}
+ul#products li .price{color:#EF304A; }
+ul#products li .product-image:hover{border-color:#EF304A; }
+ul#products li .product-image{-moz-border-radius: 15px 15px 15px 0;
+    -webkit-border-radius: 15px 15px 15px 0; 
+    border-radius: 15px 15px 15px 0; 
+    -webkit-box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3);  
+    -moz-box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3); 
+    box-shadow: 5px -5px 0 0 rgba(51, 51, 51, 0.3);}
+
+footer {
+    /*margin: -117px auto;
+    margin:-117px auto;*/
+    width:960px;/*
+    height:100px;*/
+    clear: both;
+    background: url("http://localhost/malocchio/wp-content/themes/DragonRoostIsland/images/back01.jpg") repeat scroll 0 0 transparent;
+    color: #FFF;
+    border-top:20px solid #EF304A;
+    border-right:1px solid #D9D9D9;
+    border-left:1px solid #D9D9D9;
+    
+     position: relative;
+    margin: -170px auto; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+}
+
